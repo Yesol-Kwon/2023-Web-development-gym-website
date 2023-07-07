@@ -1,0 +1,896 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+:root {
+  --background-color: #000;
+  --text-color: #f0f4f5;
+  --hover-color: #b22222;
+  --body-color: #181818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--body-color);
+}
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* nav */
+.navbar {
+  display: flex;
+  background-color: var(--background-color);
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  width: 100%;
+}
+.navbar .menu {
+  width: 100%;
+}
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  padding: 2rem 1.2rem;
+}
+
+nav a {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--hover-color);
+  transition: color 0.3s;
+}
+
+.navbar-toggle-btn {
+  position: absolute;
+  right: 2rem;
+  top: 0.5rem;
+  color: var(--hover-color);
+  font-size: 2rem;
+  display: none;
+}
+.fa-bars {
+  font-size: 1.4rem;
+}
+/* end of nav */
+
+/* home */
+/* .body {
+  height: 100%;
+  background-color: var(--background-color);
+} */
+
+.img-container {
+  height: 100%;
+}
+
+.img-container {
+  display: flex;
+  position: relative;
+  text-align: center;
+}
+.img-container ~ footer {
+  background-color: var(--background-color);
+}
+
+.img-man,
+.img-woman {
+  flex: 50%;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.greeting > p {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: var(--text-color);
+  opacity: 0.4;
+}
+.join-button {
+  color: var(--hover-color);
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: absolute;
+  letter-spacing: 0.2rem;
+  transform: translate(-50%, -15%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.join-button:hover {
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--background-color); */
+  padding: 1rem 0;
+}
+.footer-text {
+  height: 30%;
+  width: 100%;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+/* .footer-text > p {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: right;
+} */
+.signup-form {
+  margin-top: 1rem;
+}
+.sign-up-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+.signup-form-input {
+  width: 20rem;
+  height: 0.2rem;
+  padding: 1rem;
+  border: 0.1rem solid var(--text-color);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.signup-form-input:focus {
+  background-color: #aaa;
+}
+.signup-form-input::placeholder {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.signup-form-btn {
+  position: relative;
+  left: -2.4rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.footer-contents {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  color: var(--text-color);
+  padding-top: 3rem;
+  text-transform: capitalize;
+  border-top: 0.1rem solid #aaa;
+}
+.footer-contents a {
+  font-size: 0.8rem;
+  color: var(--text-color);
+}
+.footer-contents > img {
+  width: 4rem;
+  height: 1.5rem;
+}
+/* end of footer */
+
+/* studio */
+.studio-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+}
+.section-heading {
+  color: var(--text-color);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 1rem;
+}
+
+.studios-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.studio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  width: 60%;
+  height: 5rem;
+  border: 0.1rem solid black;
+  background-color: #f0f4f5;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  padding-left: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.contact-icon > span {
+  font-size: 1.4rem;
+  color: var(--background-color);
+  padding-right: 1rem;
+}
+
+/* classes -css 수정 */
+
+.class {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+}
+.cards-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.flip-card {
+  background-color: transparent;
+  width: 13rem;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  border: 1px solid #f1f1f1;
+}
+
+.membership-comment > p {
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+/* .flip-card-front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+} */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.flip-card-front {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.flip-card-front > h2 {
+  font-size: 2rem;
+  margin: auto 0;
+}
+
+.flip-card-back {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #fff;
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+/* membership */
+.membership {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+}
+
+.section-comment {
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.membership-form {
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  margin: auto;
+  color: var(--text-color);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.membership-form > .form-column > .input-container > span {
+  color: #f0f4f5;
+  padding: 0 0.5rem;
+  position: relative;
+  top: -0.4rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.membership-form span {
+  font-size: 0.5rem;
+  position: absoulte;
+  right: 0.1rem;
+  /* margin-left: 1rem; */
+}
+.form-column {
+  display: flex;
+  padding: 0.4rem;
+}
+.form-column > label {
+  margin-bottom: 10px;
+  flex: 1 0 1rem;
+  box-sizing: border-box;
+}
+.form-column > .input-container > input::placeholder {
+  color: transparent;
+}
+.form-column .half-input {
+  width: 10rem;
+}
+.form-column > select .half-input {
+  flex: 1 0 1rem;
+  width: 5rem;
+  box-sizing: border-box;
+}
+.form-column > .input-container > input {
+  text-align: left;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 20rem;
+}
+
+.membership-form > input[type="submit"] {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+/* .membership-form {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
+  margin-top: 2rem;
+} */
+
+.required::before {
+  content: " *";
+  color: var(--hover-color);
+}
+
+/*  place it center */
+.form-btn {
+  display: grid;
+}
+.form-btn input[type="submit"] {
+  width: 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 1/1;
+}
+
+.form-join-btn {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  height: 2rem;
+  cursor: pointer;
+}
+
+.membership-form > label {
+  color: var(--text-color);
+}
+.membership-form > .form-column > .input-container > input:invalid {
+  border: 0.2rem solid #b22222;
+}
+.err-msg {
+  display: none;
+}
+
+.membership-form
+  > .form-column
+  > .input-container
+  > input:invalid:not(:placeholder-shown)
+  ~ .err-msg {
+  display: block;
+  font-size: 0.9rem;
+}
+.help-function {
+  position: relative;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.help-link {
+  color: var(--hover-color);
+  position: absolute;
+  top: -2rem;
+}
+.help-link span {
+  font-size: 2rem;
+}
+.help-function > .help-article .hidden {
+  display: none;
+  color: var(--text-color);
+}
+.help-video .hidden {
+  display: none;
+}
+
+.help-video {
+  display: block;
+}
+
+.help-message .hidden {
+  display: none;
+}
+
+.help-function > .help-article {
+  display: block;
+}
+
+.help-message {
+  display: block;
+  color: var(--text-color);
+  margin-top: 0.5rem;
+}
+.help-article > p {
+  font-size: 0.9rem;
+}
+/* .help-link:hover + .help-article {
+  display: block;
+} */
+
+/* nesting grid error message!! */
+
+/* timetable */
+.timetable-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--body-color);
+  color: var(--background-color);
+}
+.timetable-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.timetable-container > .section-comment,
+.membership > .section-comment {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.timetable-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  margin: auto;
+  border: 0.2rem solid #aaa;
+  background-color: #f0fff0;
+  height: 26rem;
+  overflow-y: scroll;
+}
+.timetable-grid > span {
+  text-align: center;
+  border: 0.1rem solid #aaa;
+  font-size: 1rem;
+  padding: 0.2rem;
+}
+
+.timetable-grid > span > a {
+  border-bottom: 0.2rem solid #f0f4f5;
+  text-align: center;
+  transition: color 0.2s;
+  font-weight: 100;
+}
+
+.timetable-grid > span > a:hover,
+.timetable-date > a > span:hover {
+  color: var(--hover-color);
+  font-weight: 900;
+}
+
+.timetable-date,
+.timetable-date > a > span {
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+/* resposive */
+@media only screen and (max-width: 768px) {
+  /* home */
+
+  .img-container {
+    height: 100vh;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu > .navbar-menu :hover {
+    width: 100%;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+  .menu .navbar-menu {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  .navbar-menu li {
+    width: 100%;
+    padding: 0.2rem 0;
+    text-align: center;
+    transition: 0.2s;
+  }
+  .navbar-menu a {
+    width: 80%;
+  }
+
+  .navbar-menu.active {
+    display: block;
+  }
+
+  .navbar-toggle-btn {
+    display: block;
+  }
+  .studio-container {
+    height: 100%;
+  }
+
+  .studios-list {
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  /* CLASSES */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .membership {
+    height: 100%;
+  }
+  .help-function {
+    margin: auto;
+  }
+  .memberhsip-form {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  .greeting > p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .footer {
+    width: 100%;
+  }
+
+  .signup-form,
+  .footer-text {
+    display: none;
+  }
+
+  .footer-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  /* studio */
+
+  .studio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  /* .studios-list {
+    margin: auto;
+  } * */
+  .membership {
+    height: 100vh;
+  }
+  /* .memberhsip-form {
+    height: 100vh;
+  } */
+  .contact-icon {
+    margin-top: 1rem;
+  }
+
+  .help-function {
+    margin: auto;
+  }
+  .timetable-grid {
+    height: 20rem;
+    overflow-y: scroll;
+  }
+}
+
+/* image 를 아래위로 쌓기 */
+@media only screen and (max-width: 480px) {
+  /* body {
+    background-color: var(--body-color);
+  } */
+  footer {
+    height: 40%;
+  }
+  .img-container {
+    height: 100vh;
+  }
+
+  .menu > .navbar-menu :hover {
+    width: 100%;
+    background-color: var(--hover-color);
+    color: var(--text-color);
+  }
+  .img-container > .img-man {
+    display: none;
+  }
+  .section-heading {
+    margin-bottom: 1rem;
+  }
+
+  .greeting > p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .footer-contents {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* studio */
+  .studio-container {
+    height: 100%;
+  }
+
+  .studio > span,
+  .studio > i {
+    font-size: 0.8rem;
+  }
+  .studios-list {
+    width: 100%;
+    height: 100vh;
+  }
+  /* .studios-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  } */
+  /* classes */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .flip-card {
+    width: 12rem;
+    height: 8rem;
+  }
+
+  .flip-card-front > h2 {
+    font-size: 1rem;
+  }
+  .flip-card-back > span {
+    font-size: 0.8rem;
+  }
+  /* membership */
+  /* .membership-form {
+    align-items: center;
+  } */
+
+  .membership {
+    height: 100%;
+  }
+
+  .form-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .membership-form > .form-column > .input-container > span {
+    font-size: 0.9rem;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .membership-form > .form-column > .input-container > .form-icons {
+    margin-right: 6rem;
+  }
+  .form-column > label {
+    display: none;
+  }
+  .form-column > input {
+    width: 10rem;
+  }
+  .form-column > .input-container > input {
+    width: 10rem;
+  }
+  .form-select-menu {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .form-column > .half-input {
+    width: 7rem;
+  }
+  .membership input[type="submit"] {
+    margin-top: 1rem;
+  }
+  .help-function {
+    margin-top: -1rem;
+  }
+  .help-message,
+  .help-video {
+    margin-top: 1.5rem;
+
+    /* background-color: #aaa;
+    color: #000; */
+    text-align: center;
+  }
+
+  .form-column > .input-container > input::placeholder {
+    color: #181818;
+  }
+
+  .form-column > .studio-select {
+    text-align: center;
+  }
+
+  .required-m::after {
+    content: "*";
+    color: var(--hover-color);
+  }
+
+  .timetable-grid {
+    margin-top: 1rem;
+    height: 22rem;
+    overflow-y: scroll;
+  }
+}

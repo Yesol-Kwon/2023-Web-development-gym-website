@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ML Strength - Health and Fitness</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d3ee6cf1ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/components.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="menu"></div>
+      <a href="#" aria-label="nav toggle btn" class="navbar-toggle-btn">
+        <span class="fa-solid fa-bars"></span
+      ></a>
+    </nav>
+
+    <section class="membership">
+      <h1 class="section-heading">Membership</h1>
+      <h2 class="section-comment">
+        No obligation, no pressure. Just $ 10 CASUAL VISIT.
+      </h2>
+
+      <form class="membership-form">
+        <div class="form-column">
+          <label class="required" for="first-name">First name:</label>
+          <div class="input-container">
+            <span class="fa fa-user icon required-m form-icons"></span>
+            <input
+              type="text"
+              placeholder="First name"
+              id="first-name"
+              name="first_name"
+              pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$"
+            />
+            <div class="err-msg">First name cannot have .,/ and number</div>
+          </div>
+        </div>
+        <div class="form-column">
+          <label class="required" for="last-name">Last name:</label>
+          <div class="input-container">
+            <span class="fa fa-user icon required-m form-icons"></span>
+            <input
+              type="text"
+              placeholder="Last name"
+              id="last-name"
+              name="last_name"
+              pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$"
+            />
+            <div class="err-msg">Last name cannot have .,/ and number</div>
+          </div>
+        </div>
+        <div class="form-column">
+          <label for="address">Address: </label>
+          <div class="input-container">
+            <span class="fa fa-home icon form-icons"></span>
+            <input
+              type="text"
+              placeholder="Address"
+              id="address"
+              name="address"
+            />
+          </div>
+        </div>
+        <div class="form-column">
+          <label class="required" for="phone">phone: </label>
+          <div class="input-container">
+            <span class="fa fa-phone icon required-m form-icons"></span>
+            <input
+              type="tel"
+              placeholder="Phone"
+              id="phone"
+              name="phone"
+              maxlength="10"
+              pattern="^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$"
+            />
+            <div class="err-msg">10 digits phone number</div>
+          </div>
+        </div>
+        <div class="form-column">
+          <label class="required" for="email">Email: </label>
+          <div class="input-container">
+            <span class="fa fa-envelope icon required-m form-icons"></span>
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              name="email"
+              pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+            />
+            <div class="err-msg">Invalid Email</div>
+          </div>
+        </div>
+        <div class="form-select-menu">
+          <div class="form-column">
+            <label class="studio-select" for="studio">Studio: </label>
+            <select id="studio" class="half-input" name="studio" required>
+              <option disabled value="options">Select your studio</option>
+              <option value="studio-1">Ashgrove</option>
+              <option value="studio-2">Brisbane city</option>
+              <option value="studio-3">Chermside</option>
+              <option value="studio-4">Graceville</option>
+              <option value="studio-5">Westlake</option>
+            </select>
+          </div>
+          <div class="form-column">
+            <label class="pass-select" for="pass">Casual pass: </label>
+            <input
+              type="number"
+              placeholder="Casual pass"
+              class="half-input"
+              id="pass"
+              name="pass"
+              max="500"
+              min="1"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" class="form-join-btn" value="Join" />
+      </form>
+      <!-- submit btn/ help btn  -->
+      <div class="help-function">
+        <a href="#" class="help-link" area-label="help-link-hover-icon"
+          ><span class="fa fa-question-circle-o"></span
+        ></a>
+        <article class="help-article hidden">
+          <iframe
+            class="help-video hidden"
+            width="100"
+            height="100"
+            src="https://www.youtube.com/embed/kza8gW_jnl8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+          <p class="help-message hidden">* is mandantory</p>
+        </article>
+      </div>
+      <footer class="footer"></footer>
+    </section>
+  </body>
+</html>
