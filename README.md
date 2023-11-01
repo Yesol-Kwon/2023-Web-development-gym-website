@@ -1,6 +1,6 @@
 # ML strengh gym webstie
 
-> 5 pages of the gym website consist of HTML, CSS andJavascript. 
+> 5 pages of the gym website consist of HTML, CSS and Javascript. 
 
 ## Table of Contents
 
@@ -41,11 +41,11 @@ It has 5 pages and all of pages are mobile freindly.
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup
+- clone the git 
+  git clone https://github.com/yeskwonny/2023-Web-development-gym-website.git
+- git page
+  https://yeskwonny.github.io/2023-Web-development-gym-website/index.html
 
--clone the git 
-git clone https://github.com/yeskwonny/2023-Web-development-gym-website.git
--git page
-https://yeskwonny.github.io/2023-Web-development-gym-website/index.html
 
 
 
