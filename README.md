@@ -33,9 +33,9 @@ It has 5 pages and all of pages are mobile freindly.
 - Input validation using Regex on front-end side
 - Form handles input error and shows error messages. 
 
-## Screenshots
+## Screenshots/ Live demo
 [LIVE DEMO](https://gymofmlstrength.netlify.app/index.html)
-![Example screenshot](./img/screenshot.png)
+
 
 <!-- If you have screenshots you'd like to share, include them here. -->
 
